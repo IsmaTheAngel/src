@@ -1,0 +1,16 @@
+[
+{
+  "modid": "aznelia",
+  "name": "Aznelia",
+  "description": "Mod du serveur Aznelia.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Iska"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
