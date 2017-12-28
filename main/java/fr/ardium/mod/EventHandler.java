@@ -5,9 +5,11 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import fr.ardium.mod.blocks.RegistryBlocks;
+import fr.ardium.mod.items.RegistryItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.client.event.GuiOpenEvent;
@@ -66,5 +68,32 @@ public class EventHandler {
 	      v1.gui = new GuiCustomMainMenu();
 	    }
 }
-	 
+	 public static boolean hasLitLanternOnHotbar(InventoryPlayer inv)
+
+	    {
+
+	        for (int i = 0; i < 9; i++)
+
+	        {
+
+	            ItemStack item = inv.mainInventory[i];
+
+
+
+	            if (item != null && item.getItem() == RegistryItems.itemLantern)
+
+	            {
+
+	                return true;
+
+	            }
+
+	        }
+
+
+
+	        return false;
+
+	    }
+ 
 }
