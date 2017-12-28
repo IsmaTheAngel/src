@@ -1,10 +1,10 @@
 [
 {
-  "modid": "aznelia",
-  "name": "Aznelia",
-  "description": "Mod du serveur Aznelia.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
+  "modid": "ardium",
+  "name": "Ardium",
+  "description": "Mod Officiel du serveur Ardium",
+  "version": "5",
+  "mcversion": "1.7.10",
   "url": "",
   "updateUrl": "",
   "authorList": ["Iska"],
