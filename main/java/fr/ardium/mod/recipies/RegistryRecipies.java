@@ -157,13 +157,6 @@ public class RegistryRecipies
     GameRegistry.addRecipe(new ItemStack (RegistryBlocks.ardium_extractor , 1),new Object[]{"AAA","AFA","AAA",'A',RegistryItems.ardium_ingot,'F',Blocks.furnace});
     GameRegistry.addRecipe(new ItemStack (RegistryBlocks.fertilizer , 1),new Object[]{"AAA","AFA","AAA",'A',RegistryItems.ardium_ingot,'F',Items.wheat_seeds});
     
-    GameRegistry.addRecipe(new ItemStack (RegistryBlocks.sea_lantern, 4), new Object[]{"AA " , "AA " ," B ",'A' ,RegistryItems.ardium_crystal,'B' ,Items.water_bucket});
-	GameRegistry.addRecipe(new ItemStack (RegistryBlocks.ardium_lantern, 4), new Object[]{"AA " , "AA " ,"  ",'A' ,RegistryItems.ardium_crystal});
-    GameRegistry.addShapelessRecipe(new ItemStack(RegistryItems.ardium_shard,9), new ItemStack(RegistryItems.ardium_crystal));
-    GameRegistry.addShapelessRecipe(new ItemStack(RegistryItems.ardium_shard,9), new ItemStack(RegistryBlocks.ardium_prismanireb));
-    GameRegistry.addRecipe(new ItemStack (RegistryBlocks.ardium_prismanire, 4), new Object[]{"AA " , "AA " ,"  ",'A' ,RegistryItems.ardium_shard});
-	GameRegistry.addRecipe(new ItemStack (RegistryBlocks.ardium_prismanire_bricks, 4), new Object[]{"AAA" , "AAA" ,"AAA",'A' ,RegistryItems.ardium_shard});
-	
 	 GameRegistry.addRecipe(new ItemStack(RegistryItems.itemLantern, 1), new Object[]{" I ", " S ", " I ", 'I', Items.iron_ingot, 'S', Items.glowstone_dust});
 	}
 }

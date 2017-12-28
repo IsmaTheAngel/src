@@ -43,12 +43,8 @@ public class RegistryBlocks
 	public static Block fertilized_crop,diamond_crop,certus_crop,certuslvl2_crop,gold_crop,redstone_crop,emerald_crop,inferium_crop,intermidium_crop,superium_crops,supremium_crops,iron_crop,coal_crop,lapis_crop,air_crop,earth_crop,fire_crop,water_crop;
 	public static Block fertilizer , glassmod,clearglass;
 	public static Block iron_box;
-<<<<<<< HEAD
 	public static Block amorpha_crop;
-=======
-	public static Block coal_crops,sea_lantern,ardium_lantern;
-	public static Block ardium_prismanire_bricks,ardium_prismanireb,ardium_prismanire;
->>>>>>> e9794b460bb8cd7b0a62391e0b2c68f1543668f7
+	public static Block coal_crops;
 	
 	public static void init() {
 	ardium_ore = new BlockBasic(Material.rock, 2).setBlockName("ardium_ore").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":ardium_ore").setHardness(5.0F);		
@@ -206,19 +202,6 @@ public class RegistryBlocks
      clearglass = new BlockClearGlass("clearglass", false).setBlockName("clearglass");
      GameRegistry.registerBlock(clearglass, clearglass.getUnlocalizedName().substring(5));
      
-     ardium_lantern = new BlockBasic(Material.rock, 2).setBlockName("ardium_lantern").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":ardium_lantern").setLightLevel(1.0F).setHardness(5.0F);		
-     GameRegistry.registerBlock(ardium_lantern, ardium_lantern.getUnlocalizedName().substring(5));
-     
-     sea_lantern = new BlockBasic(Material.rock, 2).setBlockName("sea_lantern").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":sea_lantern").setLightLevel(1.0F).setHardness(5.0F);		
-     GameRegistry.registerBlock(sea_lantern, sea_lantern.getUnlocalizedName().substring(5));
-   
-     ardium_prismanire_bricks = new BlockBasic(Material.rock, 2).setBlockName("ardium_prismanire_bricks").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":prismarine_bricks").setHardness(5.0F);		
-	 GameRegistry.registerBlock(ardium_prismanire_bricks, ardium_prismanire_bricks.getUnlocalizedName().substring(5));
-	
-	 ardium_prismanireb = new BlockBasic(Material.rock, 2).setBlockName("ardium_prismanireb").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":prismarine_dark").setHardness(5.0F);		
-	GameRegistry.registerBlock(ardium_prismanireb, ardium_prismanireb.getUnlocalizedName().substring(5));
-	
-	ardium_prismanire = new BlockBasic(Material.rock, 2).setBlockName("ardium_prismanire").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":prismarine_rough").setHardness(5.0F);		
-	GameRegistry.registerBlock(ardium_prismanire, ardium_prismanire.getUnlocalizedName().substring(5));
-}
+	}
+ 
 }
