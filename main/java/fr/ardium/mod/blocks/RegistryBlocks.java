@@ -21,7 +21,7 @@ import fr.ardium.mod.blocks.crops.BlockCropSuperium;
 import fr.ardium.mod.blocks.crops.BlockCropSupremium;
 import fr.ardium.mod.blocks.crops.BlockCropWater;
 import fr.ardium.mod.items.RegistryItems;
-import fr.ardium.mod.newcrops.BlockCropsCoal;
+import fr.ardium.mod.newcrops.AmorphaCrop;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -43,7 +43,7 @@ public class RegistryBlocks
 	public static Block fertilized_crop,diamond_crop,certus_crop,certuslvl2_crop,gold_crop,redstone_crop,emerald_crop,inferium_crop,intermidium_crop,superium_crops,supremium_crops,iron_crop,coal_crop,lapis_crop,air_crop,earth_crop,fire_crop,water_crop;
 	public static Block fertilizer , glassmod,clearglass;
 	public static Block iron_box;
-	public static Block coal_crops;
+	public static Block amorpha_crop;
 	
 	public static void init() {
 	ardium_ore = new BlockBasic(Material.rock, 2).setBlockName("ardium_ore").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":ardium_ore").setHardness(5.0F);		
@@ -162,8 +162,8 @@ public class RegistryBlocks
     certuslvl2_crop = new BlockCropLvl2(0);
     
     
-    coal_crops = new BlockCropsCoal().setBlockName("coal_crops").setBlockTextureName(Ardium.MODID+":coal_crops");
-    GameRegistry.registerBlock(coal_crops, coal_crops.getUnlocalizedName().substring(5));
+    amorpha_crop = new AmorphaCrop().setBlockName("coal_crops").setBlockTextureName(Ardium.MODID+":amorpha_crop");
+    GameRegistry.registerBlock(amorpha_crop, amorpha_crop.getUnlocalizedName().substring(5));
     
     
     GameRegistry.registerBlock(fertilized_crop, fertilized_crop.getUnlocalizedName().substring(5));

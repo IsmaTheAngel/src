@@ -3,8 +3,10 @@ package fr.ardium.mod.proxy;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import fr.ardium.mod.EventHandler;
+import fr.ardium.mod.blocks.crops.EventOnCropBroked;
 import fr.ardium.mod.entity.EntityDynamite;
 import fr.ardium.mod.entity.RenderDynamite;
+import fr.ardium.mod.newcrops.EventOnBlockCropBroked;
 import fr.ardium.mod.render.ItemRenderingHandler;
 import fr.ardium.mod.render.MekanismRenderer;
 import fr.ardium.mod.render.RenderBlockSpike;
@@ -32,7 +34,7 @@ public class ClientProxy extends CommonProxy
 
 	public ClientProxy(){
 		 MinecraftForge.EVENT_BUS.register(this);
-		 
+		 MinecraftForge.EVENT_BUS.register(new EventOnBlockCropBroked());
 	 }
 	 @SubscribeEvent
 	 public void RemoveVanillaButtons(InitGuiEvent.Post event){

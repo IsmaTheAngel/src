@@ -7,6 +7,7 @@ import java.util.Map;
 import fr.ardium.mod.Ardium;
 import fr.ardium.mod.items.RegistryItems;
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -28,6 +29,8 @@ public FertilizerRecipies()
 	registerRecipe(new ItemStack(RegistryItems.CropEssencesT2,1,2), new ItemStack(RegistryItems.CropEssencesT2,1,2), new ItemStack(RegistryItems.CropEssencesT2,1,2), new ItemStack(RegistryItems.CropEssencesT2,1,2), new ItemStack(RegistryItems.CropEssencesT2,1,2), new ItemStack(Items.emerald,1,4));
 	
 	registerRecipe(new ItemStack(RegistryItems.CropEssencesT3,1,0), new ItemStack(RegistryItems.CropEssencesT3,1,0), new ItemStack(RegistryItems.CropEssencesT3,1,0), new ItemStack(RegistryItems.CropEssencesT3,1,0), new ItemStack(RegistryItems.CropEssencesT3,1,0), new ItemStack(Items.diamond,1,0));
+
+	registerRecipe(new ItemStack(RegistryItems.amorpha_petal,1,0), new ItemStack(RegistryItems.amorpha_petal,1,0), new ItemStack(Blocks.dirt,1,0), new ItemStack(RegistryItems.amorpha_petal,1,0), new ItemStack(RegistryItems.amorpha_petal,1,0), new ItemStack(Blocks.coal_block,1,0));
 }
 	
 
