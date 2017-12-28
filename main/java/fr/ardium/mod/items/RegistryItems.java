@@ -45,7 +45,12 @@ public class RegistryItems
 	public static Item spruce_door,acacia_door,birch_door,dark_oak_door,jungle_door;
 	public static Item CropEssencesT1,CropEssencesT3,CropEssencesT2;
 	public static Item fertilized_seed,gold_seed,emerald_seed,redstone_seed,inferium_seed,intermidium_seed,superium_seed,supremium_seed,iron_seed,coal_seed,lapis_seed,diamond_seed,certus_seed,certuslvl2_seed,infused_fragment,element_essences,magical_essences,air_seed,earth_seed,water_seed,fire_seed;
+<<<<<<< HEAD
 	public static Item amorpha_seeds,amorpha_petal,leave;
+=======
+	public static Item record_electric,ardium_crystal;
+	public static Item ardium_shard;
+>>>>>>> e9794b460bb8cd7b0a62391e0b2c68f1543668f7
 	
 	public static void init() {
 	ardium_ingot = new Item().setUnlocalizedName("ardium_ingot").setCreativeTab(Ardium.ArdiumCreativeTab).setTextureName(Ardium.MODID + ":ardium_ingot");
@@ -154,6 +159,7 @@ public class RegistryItems
     GameRegistry.registerItem(supremium_seed, "supremium_seed");
     GameRegistry.registerItem(inferium_seed, "inferium_seed");
     GameRegistry.registerItem(intermidium_seed, "intermidium_seed");
+<<<<<<< HEAD
 
 	amorpha_seeds = new amorpha_seeds(RegistryBlocks.amorpha_crop, Blocks.farmland).setUnlocalizedName("amorpha_seeds").setTextureName(Ardium.MODID+":amorpha_seeds");
 	GameRegistry.registerItem(amorpha_seeds, "amorpha_seeds");
@@ -164,4 +170,13 @@ public class RegistryItems
 	leave= new Item().setUnlocalizedName("leave").setTextureName(Ardium.MODID+":leave").setCreativeTab(Ardium.ArdiumCreativeTab);
 	GameRegistry.registerItem(leave, "leave");
 	}
+=======
+    
+    ardium_crystal = new Item().setUnlocalizedName("ardium_crystal").setCreativeTab(Ardium.ArdiumCreativeTab).setTextureName(Ardium.MODID + ":ardium_crystals");
+    GameRegistry.registerItem(ardium_crystal,"ardium_crystal");
+    
+    ardium_shard = new Item().setUnlocalizedName("ardium_shard").setCreativeTab(Ardium.ArdiumCreativeTab).setTextureName(Ardium.MODID + ":prismarine_shard");
+    GameRegistry.registerItem(ardium_shard,"ardium_shard");
+}
+>>>>>>> e9794b460bb8cd7b0a62391e0b2c68f1543668f7
 }
