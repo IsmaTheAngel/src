@@ -11,7 +11,6 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import fr.ardium.mod.Ardium;
 import fr.ardium.mod.BackpackEventHandler;
-import fr.ardium.mod.api.TinkerAPI;
 import fr.ardium.mod.armors.RegistryArmors;
 import fr.ardium.mod.blocks.RegistryBlocks;
 import fr.ardium.mod.blocks.RegistryFluid;
@@ -52,12 +51,7 @@ public class CommonProxy {
 		RegistryTools.init();
 		RegistryArmors.init();
 		RegistryFluid.init();
-		TinkerAPI.addMoltenMetals();
-		TinkerAPI._addSmelteryBlocks();
-		TinkerAPI._addArdiumMaterials();
-		TinkerAPI._intiParts();
-		TinkerAPI._registerParts();
-		TinkerAPI.addBuckets();
+
 	}
 	@EventHandler
 	public static void Init(FMLInitializationEvent event)

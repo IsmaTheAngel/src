@@ -4,7 +4,6 @@ import cpw.mods.fml.common.eventhandler.EventPriority;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import fr.ardium.mod.api.BucketHandler;
 import fr.ardium.mod.blocks.RegistryBlocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
@@ -13,7 +12,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.client.event.GuiOpenEvent;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
-import net.minecraftforge.event.entity.player.FillBucketEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 public class EventHandler {
@@ -68,9 +66,5 @@ public class EventHandler {
 	      v1.gui = new GuiCustomMainMenu();
 	    }
 }
-	 @SubscribeEvent
-	  public void onFillBucket(FillBucketEvent event)
-	  {
-	    BucketHandler.getInstance().fillEvent(event);
-	  }
+	 
 }
