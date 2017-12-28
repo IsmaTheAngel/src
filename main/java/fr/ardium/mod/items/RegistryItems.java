@@ -165,6 +165,11 @@ public class RegistryItems
 	
 	leave= new Item().setUnlocalizedName("leave").setTextureName(Ardium.MODID+":leave").setCreativeTab(Ardium.ArdiumCreativeTab);
 	GameRegistry.registerItem(leave, "leave");
+	
+	
+	
+	
+	
 	}
 
     
