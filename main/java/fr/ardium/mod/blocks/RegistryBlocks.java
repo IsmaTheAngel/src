@@ -22,6 +22,7 @@ import fr.ardium.mod.blocks.crops.BlockCropSupremium;
 import fr.ardium.mod.blocks.crops.BlockCropWater;
 import fr.ardium.mod.items.RegistryItems;
 import fr.ardium.mod.newcrops.AmorphaCrop;
+import fr.ardium.mod.newcrops.CleomeCrop;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -44,7 +45,7 @@ public class RegistryBlocks
 	public static Block fertilizer , glassmod,clearglass;
 	public static Block iron_box;
 	public static Block amorpha_crop;
-	public static Block coal_crops;
+	public static Block coal_crops,cleome_crop;
 	
 	public static void init() {
 	ardium_ore = new BlockBasic(Material.rock, 2).setBlockName("ardium_ore").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":ardium_ore").setHardness(5.0F);		
@@ -202,6 +203,8 @@ public class RegistryBlocks
      clearglass = new BlockClearGlass("clearglass", false).setBlockName("clearglass");
      GameRegistry.registerBlock(clearglass, clearglass.getUnlocalizedName().substring(5));
      
+     cleome_crop = new CleomeCrop().setBlockName("iron_crop").setBlockTextureName(Ardium.MODID +":cleome_crop");
+     GameRegistry.registerBlock(cleome_crop, cleome_crop.getUnlocalizedName().substring(5));
 	}
  
 }

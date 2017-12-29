@@ -180,7 +180,7 @@ public class GuiCustomMainMenu extends GuiScreen implements GuiYesNoCallback
 		 this.buttonList.add(new GuiButton(3310, this.width/ 2 + 2, par1 * 1 + 42, 98, 20, EnumChatFormatting.GOLD + "" + "Boutique"));
     	 this.buttonList.add(new GuiButton(3311, this.width / 2 - 100, par1 * 1 + 42, 98, 20, EnumChatFormatting.RESET + "" + "You"+ EnumChatFormatting.DARK_RED + "" + "Tube"));
     	 this.buttonList.add(new GuiButton(3312, this.width / 2 - 100, par1 - 28 + par2 * 2, EnumChatFormatting.BLUE + "" + "Notre Discord"));
-    	 this.buttonList.add(new GuiButton(3313, this.width / 2 - 100, par1 - 50 + par2 * 2, EnumChatFormatting.DARK_PURPLE + "" + "Rejoindre Ardium Special Edition"));
+    	 this.buttonList.add(new GuiButton(3313, this.width / 2 - 100, par1 - 50 + par2 * 2, EnumChatFormatting.DARK_PURPLE + "" + "Ardium Special Edition"));
     	 this.buttonList.add(new GuiButton(3314, this.width / 2 - 100, par1 + 65, 98, 20, EnumChatFormatting.GREEN + "" + "Options"));
     	 this.buttonList.add(new GuiButton(3315, this.width / 2 + 2, par1 + 65, 98, 20, EnumChatFormatting.RED + "" + "Quitter"));
     

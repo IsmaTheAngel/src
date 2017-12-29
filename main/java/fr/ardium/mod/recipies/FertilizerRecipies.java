@@ -31,6 +31,8 @@ public FertilizerRecipies()
 	registerRecipe(new ItemStack(RegistryItems.CropEssencesT3,1,0), new ItemStack(RegistryItems.CropEssencesT3,1,0), new ItemStack(RegistryItems.CropEssencesT3,1,0), new ItemStack(RegistryItems.CropEssencesT3,1,0), new ItemStack(RegistryItems.CropEssencesT3,1,0), new ItemStack(Items.diamond,1,0));
 
 	registerRecipe(new ItemStack(RegistryItems.amorpha_petal,1,0), new ItemStack(RegistryItems.amorpha_petal,1,0), new ItemStack(Blocks.dirt,1,0), new ItemStack(RegistryItems.amorpha_petal,1,0), new ItemStack(RegistryItems.amorpha_petal,1,0), new ItemStack(Blocks.coal_block,1,0));
+	registerRecipe(new ItemStack(RegistryItems.leave,1,0), new ItemStack(RegistryItems.leave,1,0), new ItemStack(RegistryItems.leave,1,0), new ItemStack(RegistryItems.leave,1,0), new ItemStack(RegistryItems.leave,1,0), new ItemStack(Blocks.leaves,1,0));
+
 }
 	
 

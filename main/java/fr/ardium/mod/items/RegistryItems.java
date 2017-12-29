@@ -27,6 +27,7 @@ import fr.ardium.mod.items.crops.SeedRedstone;
 import fr.ardium.mod.items.crops.SeedWater;
 import fr.ardium.mod.items.crops.SeedsSuperium;
 import fr.ardium.mod.items.crops.SeedsSupremium;
+import fr.ardium.mod.newcrops.CleomeSeeds;
 import fr.ardium.mod.newcrops.amorpha_seeds;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -47,6 +48,7 @@ public class RegistryItems
 	public static Item fertilized_seed,gold_seed,emerald_seed,redstone_seed,inferium_seed,intermidium_seed,superium_seed,supremium_seed,iron_seed,coal_seed,lapis_seed,diamond_seed,certus_seed,certuslvl2_seed,infused_fragment,element_essences,magical_essences,air_seed,earth_seed,water_seed,fire_seed;
 	public static Item amorpha_seeds,amorpha_petal,leave;
 	public static Item record_electric,ardium_crystal;
+	public static Item cleome_seeds;
 
 	
 	public static void init() {
@@ -157,7 +159,7 @@ public class RegistryItems
     GameRegistry.registerItem(inferium_seed, "inferium_seed");
     GameRegistry.registerItem(intermidium_seed, "intermidium_seed");
 
-	amorpha_seeds = new amorpha_seeds(RegistryBlocks.amorpha_crop, Blocks.farmland).setUnlocalizedName("amorpha_seeds").setTextureName(Ardium.MODID+":amorpha_seeds");
+	amorpha_seeds = new amorpha_seeds(RegistryBlocks.amorpha_crop, Blocks.farmland).setUnlocalizedName("amorpha_seeds").setTextureName(Ardium.MODID+":amorpha_seeds").setCreativeTab(Ardium.ArdiumCreativeTab);
 	GameRegistry.registerItem(amorpha_seeds, "amorpha_seeds");
 	
 	amorpha_petal= new Item().setUnlocalizedName("amorpha_petal").setTextureName(Ardium.MODID+":amorpha_petal").setCreativeTab(Ardium.ArdiumCreativeTab);
@@ -166,7 +168,8 @@ public class RegistryItems
 	leave= new Item().setUnlocalizedName("leave").setTextureName(Ardium.MODID+":leave").setCreativeTab(Ardium.ArdiumCreativeTab);
 	GameRegistry.registerItem(leave, "leave");
 	
-	
+	cleome_seeds = new CleomeSeeds(RegistryBlocks.cleome_crop, Blocks.farmland).setUnlocalizedName("cleome_seeds").setTextureName(Ardium.MODID+":cleome_seeds").setCreativeTab(Ardium.ArdiumCreativeTab);
+	GameRegistry.registerItem(cleome_seeds, "cleome_seeds");
 	
 	
 	
