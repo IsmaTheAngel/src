@@ -21,7 +21,7 @@ public class ContainerFertilizer extends Container
 	    addSlotToContainer(new Slot(tile, 3, 125, 92));
 	    addSlotToContainer(new Slot(tile, 4, 125, 110));
 	    
-	    addSlotToContainer(new SlotResult(tile, 5, 89, 131));
+	    addSlotToContainer(new SlotResult(tile, 5, 89, 149));
 	    bindPlayerInventory(inventory);
 	  }
 	  

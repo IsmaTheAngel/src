@@ -34,7 +34,7 @@ public class GuiFertilizer extends GuiContainer
 	    if (this.tile.isBurning())
 	    {
 	      int i = this.tile.getCookProgress();
-	      drawTexturedModalRect(k + 65, l + 148, 197, 128, 60, i);
+	      drawTexturedModalRect(k + 65, l + 130, 197, 128, 60, i);
 	    }
 	  }
 	  

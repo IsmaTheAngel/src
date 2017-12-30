@@ -23,7 +23,6 @@ import fr.ardium.mod.recipies.RegistryRecipies;
 import fr.ardium.mod.tile.GuiHandler;
 import fr.ardium.mod.tile.TileEntityArdiumFurnace;
 import fr.ardium.mod.tile.TileEntityFertilizer;
-import fr.ardium.mod.tile.TileEntityOxiumFurnace;
 import fr.ardium.mod.tile.TileExtractor;
 import fr.ardium.mod.tools.RegistryTools;
 import fr.ardium.mod.world.WorldRegister;
@@ -61,7 +60,6 @@ public class CommonProxy {
 	    NetworkRegistry.INSTANCE.registerGuiHandler(Ardium.instance, new GuiHandler());
 	    MinecraftForge.EVENT_BUS.register(new BackpackEventHandler());
 	    GameRegistry.registerTileEntity(TileEntityArdiumFurnace.class, "ardium:tileardiumfurnace");
-		GameRegistry.registerTileEntity(TileEntityOxiumFurnace.class, "ardium:tileoxiumfurnace");
 		GameRegistry.registerTileEntity(TileExtractor.class, "ardium:tileextractor");
 		GameRegistry.registerTileEntity(TileEntityFertilizer.class, "ardium:tilefertilizer");
 		GameRegistry.addRecipe(new RExtractorRecipies());

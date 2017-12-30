@@ -29,36 +29,18 @@ public class BlockExtractor extends BlockContainer
 	    setHardness(10.0F);
 	  }
 	  
-	  public boolean isBlockStructure(World world, int x, int y, int z)
-	  {
-	    if (structureIfBlockPlacedAtNorth(world, x, y, z)) {
-	      return true;
-	    }
-	    if (structureIfBlockPlacedAtEast(world, x, y, z)) {
-	      return true;
-	    }
-	    if (structureIfBlockPlacedAtSouth(world, x, y, z)) {
-	      return true;
-	    }
-	    if (structureIfBlockPlacedAtWest(world, x, y, z)) {
-	      return true;
-	    }
-	    return false;
-	  }
-	  
 	  
 	    
 		  public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ)
 		  {
-			  if (isBlockStructure(world, x, y, z))
-			    {
+			  
 			      if (!world.isRemote) {
 		    player.openGui(Ardium.instance, 0, world, x, y, z);
 			      }
 			      return true;
-			    }
-			    return false;
 		  }
+			    
+		  
 	  
 	  
 	  public void breakBlock(World world, int x, int y, int z, Block block, int metadata)
@@ -99,99 +81,7 @@ public class BlockExtractor extends BlockContainer
 	    }
 	  }
 	  
-	  private static boolean structureIfBlockPlacedAtNorth(World world, int x, int y, int z)
-	  {
-		  if (((world.getBlock(x + -1, y + -1, z + 0).equals(RegistryBlocks.ardium_block)) && 
-			      ((world.getBlock(x + -1, y + -1, z + -1).equals(RegistryBlocks.ardium_block)) && 
-			      ((world.getBlock(x + -1, y + -1, z + -2).equals(RegistryBlocks.ardium_block)) && 
-			      ((world.getBlock(x + 0, y + -1, z + 0).equals(RegistryBlocks.ardium_block)) && 
-			      ((world.getBlock(x + 0, y + -1, z + -1).equals(RegistryBlocks.ardium_block)))))))) {
-			      if ((world.getBlock(x + 0, y + -1, z + -2).equals(RegistryBlocks.ardium_block))) {
-			                if ((world.getBlock(x + 1, y + -1, z + 0).equals(RegistryBlocks.ardium_block))) {
-			                  if ((world.getBlock(x + 1, y + -1, z + -1).equals(RegistryBlocks.ardium_block))) {
-			                    if ((world.getBlock(x + 1, y + -1, z + -2).equals(RegistryBlocks.ardium_block))) {
-			                     
-	                     
-	                                  return true;
-	                                }
-	                              }
-	                            }
-	                          }
-	      }
-	                      
-	                   return false;
-	      
-	  }
-	  
-	  private static boolean structureIfBlockPlacedAtEast(World world, int x, int y, int z)
-	  {
-	    if (((world.getBlock(x + 0, y + -1, z + -1).equals(RegistryBlocks.ardium_block)) && 
-	      ((world.getBlock(x + 1, y + -1, z + -1).equals(RegistryBlocks.ardium_block)) && 
-	      ((world.getBlock(x + 2, y + -1, z + -1).equals(RegistryBlocks.ardium_block)) && 
-	      ((world.getBlock(x + 0, y + -1, z + 0).equals(RegistryBlocks.ardium_block)) && 
-	      ((world.getBlock(x + 1, y + -1, z + 0).equals(RegistryBlocks.ardium_block)))))))) {
-	      if ((world.getBlock(x + 2, y + -1, z + 0).equals(RegistryBlocks.ardium_block))){
-	                if ((world.getBlock(x + 0, y + -1, z + 1).equals(RegistryBlocks.ardium_block))) {
-	                  if ((world.getBlock(x + 1, y + -1, z + 1).equals(RegistryBlocks.ardium_block))) {
-	                    if ((world.getBlock(x + 2, y + -1, z + 1).equals(RegistryBlocks.ardium_block))) {
-	                      
-	                                  return true;
-	                    }
-                    }
-                  }
-                }
-}
-            
-         return false;
-
-}
-	  
-	  private static boolean structureIfBlockPlacedAtSouth(World world, int x, int y, int z)
-	  {
-	    if (((world.getBlock(x + 1, y + -1, z + 0).equals(RegistryBlocks.ardium_block)) && 
-	      ((world.getBlock(x + 1, y + -1, z + 1).equals(RegistryBlocks.ardium_block)) && 
-	      ((world.getBlock(x + 1, y + -1, z + 2).equals(RegistryBlocks.ardium_block)) && 
-	      ((world.getBlock(x + 0, y + -1, z + 0).equals(RegistryBlocks.ardium_block)) && 
-	      ((world.getBlock(x + 0, y + -1, z + 1).equals(RegistryBlocks.ardium_block)))))))) {
-	      if ((world.getBlock(x + 0, y + -1, z + 2).equals(RegistryBlocks.ardium_block))) {
-	                if ((world.getBlock(x + -1, y + -1, z + 0).equals(RegistryBlocks.ardium_block))) {
-	                  if ((world.getBlock(x + -1, y + -1, z + 1).equals(RegistryBlocks.ardium_block))) {
-	                    if ((world.getBlock(x + -1, y + -1, z + 2).equals(RegistryBlocks.ardium_block))){
-		                      
-                          return true;
-            }
-          }
-        }
-      }
-}
-  
-return false;
-
-}
-	  
-	  private static boolean structureIfBlockPlacedAtWest(World world, int x, int y, int z)
-	  {
-	    if (((world.getBlock(x + 0, y + -1, z + 1).equals(RegistryBlocks.ardium_block)) && 
-	      ((world.getBlock(x + -1, y + -1, z + 1).equals(RegistryBlocks.ardium_block)) && 
-	      ((world.getBlock(x + -2, y + -1, z + 1).equals(RegistryBlocks.ardium_block)) && 
-	      ((world.getBlock(x + 0, y + -1, z + 0).equals(RegistryBlocks.ardium_block)) && 
-	      ((world.getBlock(x + -1, y + -1, z + 0).equals(RegistryBlocks.ardium_block)))))))) {
-	      if ((world.getBlock(x + -2, y + -1, z + 0).equals(RegistryBlocks.ardium_block))) {
-	                if ((world.getBlock(x + 0, y + -1, z + -1).equals(RegistryBlocks.ardium_block))) {
-	                  if ((world.getBlock(x + -1, y + -1, z + -1).equals(RegistryBlocks.ardium_block))) {
-	                    if ((world.getBlock(x + -2, y + -1, z + -1).equals(RegistryBlocks.ardium_block))) {
-	                      
-	                    	  return true;
-	                    }
-	                  }
-	                }
-	              }
-	      }
-	          
-	       return false;
-
-	      }
-	      	  
+	 
 	  
 	  public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_)
 	  {

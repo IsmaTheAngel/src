@@ -23,10 +23,7 @@ public class GuiHandler implements IGuiHandler
 	      TileEntityArdiumFurnace tileEntityArdiumFurnace = (TileEntityArdiumFurnace)world.getTileEntity(x, y, z);
 	      return new ContainerArdiumFurnace(player.inventory, tileEntityArdiumFurnace);
 		    
-	  case 6:
-
-	      TileEntityOxiumFurnace tileEntityOxiumFurnace = (TileEntityOxiumFurnace)world.getTileEntity(x, y, z);
-	      return new ContainerOxiumFurnace(player.inventory, tileEntityOxiumFurnace);
+	 
 	  case 50: 
 	      return new ContainerAdminChest(world.getTileEntity(x, y, z));
 	  case 36: 
@@ -54,10 +51,7 @@ public class GuiHandler implements IGuiHandler
 
 		        TileEntityArdiumFurnace tileEntityArdiumFurnace = (TileEntityArdiumFurnace)world.getTileEntity(x, y, z);
 		        return new GuiArdiumFurnace(player.inventory, tileEntityArdiumFurnace);
-		    case 6:
-
-		        TileEntityOxiumFurnace tileEntityOxiumFurnace = (TileEntityOxiumFurnace)world.getTileEntity(x, y, z);
-		        return new GuiOxiumFurnace(player.inventory, tileEntityOxiumFurnace);
+		   
 		    case 50: 
 			      return new GuiAdminChest(world.getTileEntity(x, y, z));
 		    case 36: 

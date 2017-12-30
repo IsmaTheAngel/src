@@ -32,7 +32,10 @@ public FertilizerRecipies()
 
 	registerRecipe(new ItemStack(RegistryItems.amorpha_petal,1,0), new ItemStack(RegistryItems.amorpha_petal,1,0), new ItemStack(Blocks.dirt,1,0), new ItemStack(RegistryItems.amorpha_petal,1,0), new ItemStack(RegistryItems.amorpha_petal,1,0), new ItemStack(Blocks.coal_block,1,0));
 	registerRecipe(new ItemStack(RegistryItems.leave,1,0), new ItemStack(RegistryItems.leave,1,0), new ItemStack(RegistryItems.leave,1,0), new ItemStack(RegistryItems.leave,1,0), new ItemStack(RegistryItems.leave,1,0), new ItemStack(Blocks.leaves,1,0));
-
+	
+	registerRecipe(new ItemStack(RegistryItems.element_essences,1,0), new ItemStack(RegistryItems.element_essences,1,0), new ItemStack(RegistryItems.element_essences,1,0), new ItemStack(RegistryItems.element_essences,1,0), new ItemStack(RegistryItems.element_essences,1,0), new ItemStack(Items.water_bucket,1,0));
+	registerRecipe(new ItemStack(RegistryItems.element_essences,1,1), new ItemStack(RegistryItems.element_essences,1,1), new ItemStack(RegistryItems.element_essences,1,1), new ItemStack(RegistryItems.element_essences,1,1), new ItemStack(RegistryItems.element_essences,1,1), new ItemStack(Items.lava_bucket,1,0));
+	registerRecipe(new ItemStack(RegistryItems.element_essences,1,2), new ItemStack(RegistryItems.element_essences,1,2), new ItemStack(RegistryItems.element_essences,1,2), new ItemStack(RegistryItems.element_essences,1,2), new ItemStack(RegistryItems.element_essences,1,2), new ItemStack(Blocks.dirt,1,0));
 }
 	
 

@@ -40,7 +40,6 @@ public class RegistryItems
 	public static Item dynamite;
 	public static Item ardium_apple;
 	public static Item backpack;
-	public static Item speed_stone , heal_stone , jump_stone , fire_stone;
 	public static Item wand_explorer , admin_tool;
 	public static Item xpberry , itemLantern;
 	public static Item spruce_door,acacia_door,birch_door,dark_oak_door,jungle_door;
@@ -64,18 +63,6 @@ public class RegistryItems
 	backpack = new ItemBackpack();
 	GameRegistry.registerItem(backpack,"backpack");
 	
-	speed_stone = new ItemSpeedStone().setUnlocalizedName("speed_stone").setCreativeTab(Ardium.ArdiumCreativeTab).setTextureName(Ardium.MODID + ":speed_stone");
-	GameRegistry.registerItem(speed_stone,"speed_stone");
-	
-	heal_stone = new ItemHealStone().setUnlocalizedName("heal_stone").setCreativeTab(Ardium.ArdiumCreativeTab).setTextureName(Ardium.MODID + ":heal_stone");
-	GameRegistry.registerItem(heal_stone,"heal_stone");
-	
-	jump_stone = new ItemJumpStone().setUnlocalizedName("jump_stone").setCreativeTab(Ardium.ArdiumCreativeTab).setTextureName(Ardium.MODID + ":jump_stone");
-	GameRegistry.registerItem(jump_stone,"jump_stone");
-	
-	fire_stone = new ItemFireStone().setUnlocalizedName("fire_stone").setCreativeTab(Ardium.ArdiumCreativeTab).setTextureName(Ardium.MODID + ":fire_stone");
-	GameRegistry.registerItem(fire_stone, "fire_stone");
-		
 	wand_explorer = new ItemWandExplorer().setUnlocalizedName("wand_explorer").setCreativeTab(Ardium.ArdiumCreativeTab).setTextureName(Ardium.MODID + ":wand_explorer");;
 	GameRegistry.registerItem(wand_explorer,"wand_explorer");
 	

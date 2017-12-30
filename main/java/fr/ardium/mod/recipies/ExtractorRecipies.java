@@ -20,12 +20,9 @@ private Map craftingList = new HashMap();
 
 public ExtractorRecipies()
 {
-	registerRecipe(new ItemStack(RegistryBlocks.big_ardium_block,1,0), new ItemStack(RegistryBlocks.ardium_block,1,0), new ItemStack(Items.ghast_tear,1,0), new ItemStack(RegistryBlocks.ardium_block,1,0), new ItemStack(RegistryBlocks.big_ardium_block,1,0), new ItemStack(RegistryItems.heal_stone,1,0));
-	registerRecipe(new ItemStack(RegistryBlocks.big_ardium_block,1,0), new ItemStack(RegistryBlocks.ardium_block,1,0), new ItemStack(Items.sugar,1,0), new ItemStack(RegistryBlocks.ardium_block,1,0), new ItemStack(RegistryBlocks.big_ardium_block,1,0), new ItemStack(RegistryItems.speed_stone,1,0));
-	registerRecipe(new ItemStack(RegistryBlocks.big_ardium_block,1,0), new ItemStack(RegistryBlocks.ardium_block,1,0), new ItemStack(Items.slime_ball,1,0), new ItemStack(RegistryBlocks.ardium_block,1,0), new ItemStack(RegistryBlocks.big_ardium_block,1,0), new ItemStack(RegistryItems.jump_stone,1,0));
-	registerRecipe(new ItemStack(RegistryBlocks.big_ardium_block,1,0), new ItemStack(RegistryBlocks.ardium_block,1,0), new ItemStack(Items.fire_charge,1,0), new ItemStack(RegistryBlocks.ardium_block,1,0), new ItemStack(RegistryBlocks.big_ardium_block,1,0), new ItemStack(RegistryItems.fire_stone,1,0));
+
 	registerRecipe(new ItemStack(RegistryBlocks.ardium_block,1,0), new ItemStack(RegistryBlocks.ardium_block,1,0), new ItemStack(RegistryBlocks.ardium_block,1,0), new ItemStack(RegistryBlocks.ardium_block,1,0), new ItemStack(RegistryBlocks.ardium_block,1,0), new ItemStack(RegistryBlocks.big_ardium_block,1,0));
-	registerRecipe(new ItemStack(Items.iron_ingot,1,0), new ItemStack(Items.iron_ingot,1,0), new ItemStack(Blocks.glowstone,1,0), new ItemStack(Items.iron_ingot,1,0), new ItemStack(Items.iron_ingot,1,0), new ItemStack(RegistryBlocks.lanternPhys,1,0));
+	registerRecipe(new ItemStack(Items.iron_ingot,1,0), new ItemStack(Items.iron_ingot,1,0), new ItemStack(Blocks.glowstone,1,0), new ItemStack(Items.iron_ingot,1,0), new ItemStack(Items.iron_ingot,1,0), new ItemStack(RegistryItems.itemLantern,1,0));
 
 
 }

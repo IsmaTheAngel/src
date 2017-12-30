@@ -123,6 +123,6 @@ public class RegistryRecipies
     GameRegistry.addRecipe(new ItemStack (RegistryBlocks.ardium_extractor , 1),new Object[]{"AAA","AFA","AAA",'A',RegistryItems.ardium_ingot,'F',Blocks.furnace});
     GameRegistry.addRecipe(new ItemStack (RegistryBlocks.fertilizer , 1),new Object[]{"AAA","AFA","AAA",'A',RegistryItems.ardium_ingot,'F',Items.wheat_seeds});
     
-	 GameRegistry.addRecipe(new ItemStack(RegistryItems.itemLantern, 1), new Object[]{" I ", " S ", " I ", 'I', Items.iron_ingot, 'S', Items.glowstone_dust});
+	
 	}
 }

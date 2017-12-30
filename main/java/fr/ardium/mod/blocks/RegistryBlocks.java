@@ -31,7 +31,7 @@ public class RegistryBlocks
 {
 	public static Block ardium_ore  , ardium_block , big_ardium_block,ardium_stairs,ardium_fences;
 	public static Block RainbowLamp;
-	public static Block ardium_furnace , oxium_furnace , ardium_extractor;
+	public static Block ardium_furnace , ardium_extractor;
 	public static Block barrier , lantern , lanternPhys;
 	public static Block ardium_bush , xp_bush , oxium_bush;
 	public static Block spruce_trapdoor,acacia_trapdoor,birch_trapdoor,dark_oak_trapdoor,jungle_trapdoor;
@@ -55,9 +55,6 @@ public class RegistryBlocks
 	
 	ardium_furnace = new BlockArdiumFurnace(true, "ardium_furnace_off").setBlockName("ardium_furnace").setCreativeTab(Ardium.ArdiumCreativeTab);
 	GameRegistry.registerBlock(ardium_furnace, ardium_furnace.getUnlocalizedName().substring(5));
-	
-	oxium_furnace = new BlockOxiumFurnace(true, "oxium_furnace_off").setBlockName("oxium_furnace").setCreativeTab(Ardium.ArdiumCreativeTab);
-	GameRegistry.registerBlock(oxium_furnace, oxium_furnace.getUnlocalizedName().substring(5));
 	
 	RainbowLamp = new BlockBasic(Material.rock, 2).setBlockName("RainbowLamp").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":rainbow_lamp").setHardness(5.0F).setLightLevel(2.0F);		
 	GameRegistry.registerBlock(RainbowLamp, RainbowLamp.getUnlocalizedName().substring(5));
