@@ -77,8 +77,7 @@ public class WorldGenArdium implements IWorldGenerator
 	 private void generateSurface(World world, Random random, int x, int z)
 	  {
 		 addOreSpawn(RegistryBlocks.ardium_ore, 0, Blocks.stone, world, random, x, z, 16, 16, 10, 5, 15, 30);
-		 addOreSpawn(RegistryBlocks.oxium_ore, 0, Blocks.stone, world, random, x, z, 16, 16, 10, 2, 15, 30);
-			
+		
 
 			}
 		

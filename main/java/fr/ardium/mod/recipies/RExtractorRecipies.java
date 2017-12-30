@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 
 public class RExtractorRecipies implements IRecipe
 {
-	  public static final Item[][] matrix = { { RegistryItems.ardium_ingot, RegistryItems.ardium_ingot, RegistryItems.ardium_ingot }, { RegistryItems.ardium_ingot, RegistryItems.oxium_ingot, RegistryItems.ardium_ingot }, { RegistryItems.ardium_ingot, RegistryItems.ardium_ingot, RegistryItems.ardium_ingot } };
+	  public static final Item[][] matrix = { { RegistryItems.ardium_ingot, RegistryItems.ardium_ingot, RegistryItems.ardium_ingot }, { RegistryItems.ardium_ingot, RegistryItems.ardium_ingot, RegistryItems.ardium_ingot }, { RegistryItems.ardium_ingot, RegistryItems.ardium_ingot, RegistryItems.ardium_ingot } };
 	  
 	  public boolean matches(InventoryCrafting inv, World world)
 	  {

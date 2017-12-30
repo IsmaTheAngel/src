@@ -36,9 +36,9 @@ import net.minecraft.item.Item;
 
 public class RegistryItems 
 {
-	public static Item ardium_ingot , oxium_ingot; 
+	public static Item ardium_ingot; 
 	public static Item dynamite;
-	public static Item ardium_apple,oxium_apple;
+	public static Item ardium_apple;
 	public static Item backpack;
 	public static Item speed_stone , heal_stone , jump_stone , fire_stone;
 	public static Item wand_explorer , admin_tool;
@@ -55,17 +55,11 @@ public class RegistryItems
 	ardium_ingot = new Item().setUnlocalizedName("ardium_ingot").setCreativeTab(Ardium.ArdiumCreativeTab).setTextureName(Ardium.MODID + ":ardium_ingot");
 	GameRegistry.registerItem(ardium_ingot,"ardium_ingot");
 	
-	oxium_ingot = new Item().setUnlocalizedName("oxium_ingot").setCreativeTab(Ardium.ArdiumCreativeTab).setTextureName(Ardium.MODID + ":oxium_ingot");
-	GameRegistry.registerItem(oxium_ingot,"oxium_ingot");
-	
 	dynamite = new ItemDynamite("Dynamite").setUnlocalizedName("dynamite").setCreativeTab(Ardium.ArdiumCreativeTab).setTextureName(Ardium.MODID + ":dynamite");
 	GameRegistry.registerItem(dynamite,"dynamite");
 	
 	ardium_apple = new ItemArdiumApple(10, 10F, false).setAlwaysEdible().setUnlocalizedName("ardium_apple").setCreativeTab(Ardium.ArdiumCreativeTab).setTextureName(Ardium.MODID + ":ardium_apple");
 	GameRegistry.registerItem(ardium_apple,"ardium_apple");
-	
-	oxium_apple = new ItemOxiumApple(10, 10F, false).setAlwaysEdible().setUnlocalizedName("oxium_apple").setCreativeTab(Ardium.ArdiumCreativeTab).setTextureName(Ardium.MODID + ":oxium_apple");
-	GameRegistry.registerItem(oxium_apple,"oxium_apple");
 
 	backpack = new ItemBackpack();
 	GameRegistry.registerItem(backpack,"backpack");

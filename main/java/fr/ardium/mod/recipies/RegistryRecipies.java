@@ -15,9 +15,7 @@ public class RegistryRecipies
 {
 	public static void register()
 	{
-	GameRegistry.addRecipe(new ItemStack (RegistryBlocks.oxium_block , 1), new Object[]{"###" , "###" , "###" ,'#' , RegistryItems.oxium_ingot});
-    GameRegistry.addShapelessRecipe(new ItemStack(RegistryItems.oxium_ingot,9), new ItemStack(RegistryBlocks.oxium_block));
-	    
+	
     GameRegistry.addRecipe(new ItemStack (RegistryBlocks.ardium_block , 1), new Object[]{"###" , "###" , "###" ,'#' , RegistryItems.ardium_ingot});
     GameRegistry.addShapelessRecipe(new ItemStack(RegistryItems.ardium_ingot,9), new ItemStack(RegistryBlocks.ardium_block));
 	    
@@ -25,8 +23,6 @@ public class RegistryRecipies
     GameRegistry.addShapelessRecipe(new ItemStack(RegistryBlocks.ardium_block,9), new ItemStack(RegistryBlocks.big_ardium_block));
 	    
     GameRegistry.addSmelting(RegistryBlocks.ardium_ore, new ItemStack(RegistryItems.ardium_ingot), 5f);
-	    
-    GameRegistry.addSmelting(RegistryBlocks.oxium_ore, new ItemStack(RegistryItems.oxium_ingot), 5f);
 	    
     GameRegistry.addRecipe(new ItemStack (RegistryTools.ardium_sword , 1), new Object[]{" # " , " # " , " y " ,'#' , RegistryItems.ardium_ingot ,'y' , Items.stick});
     GameRegistry.addRecipe(new ItemStack (RegistryTools.ardium_sword , 1), new Object[]{"  #" , "  #" , "  y" ,'#' ,RegistryItems.ardium_ingot ,'y' , Items.stick});
@@ -37,15 +33,6 @@ public class RegistryRecipies
     GameRegistry.addRecipe(new ItemStack (RegistryTools.ardium_shovel , 1), new Object[]{"  #" , "  y" , "  y" ,'#' , RegistryItems.ardium_ingot ,'y' , Items.stick});
     GameRegistry.addRecipe(new ItemStack (RegistryTools.ardium_pickaxe , 1), new Object[]{"###" , " y " , " y " ,'#' , RegistryItems.ardium_ingot ,'y' , Items.stick});
 	    
-    GameRegistry.addRecipe(new ItemStack (RegistryTools.oxium_sword , 1), new Object[]{" # " , " # " , " y " ,'#' , RegistryItems.oxium_ingot ,'y' , Items.stick});
-    GameRegistry.addRecipe(new ItemStack (RegistryTools.oxium_sword , 1), new Object[]{"  #" , "  #" , "  y" ,'#' ,RegistryItems.oxium_ingot ,'y' , Items.stick});
-    GameRegistry.addRecipe(new ItemStack (RegistryTools.oxium_axe , 1), new Object[]{"## " , "#y " , " y " ,'#' , RegistryItems.oxium_ingot ,'y' , Items.stick});
-    GameRegistry.addRecipe(new ItemStack (RegistryTools.oxium_axe , 1), new Object[]{"  ##" , "  y#" , "  y" ,'#' , RegistryItems.oxium_ingot ,'y' , Items.stick});
-    GameRegistry.addRecipe(new ItemStack (RegistryTools.oxium_shovel , 1), new Object[]{"#  " , "y  " , "y  " ,'#' , RegistryItems.oxium_ingot ,'y' , Items.stick});
-    GameRegistry.addRecipe(new ItemStack (RegistryTools.oxium_shovel, 1), new Object[]{" # " , " y " , " y " ,'#' , RegistryItems.oxium_ingot ,'y' , Items.stick});
-    GameRegistry.addRecipe(new ItemStack (RegistryTools.oxium_shovel , 1), new Object[]{"  #" , "  y" , "  y" ,'#' , RegistryItems.oxium_ingot ,'y' , Items.stick});
-    GameRegistry.addRecipe(new ItemStack (RegistryTools.oxium_pickaxe , 1), new Object[]{"###" , " y " , " y " ,'#' , RegistryItems.oxium_ingot ,'y' , Items.stick}); 
-	    
     GameRegistry.addRecipe(new ItemStack (RegistryArmors.ardium_helmet , 1), new Object[]{"###" , "# #" , "   " ,'#' ,RegistryItems.ardium_ingot});
     GameRegistry.addRecipe(new ItemStack (RegistryArmors.ardium_helmet , 1), new Object[]{"   " , "###" , "# #" ,'#' , RegistryItems.ardium_ingot});
     GameRegistry.addRecipe(new ItemStack (RegistryArmors.ardium_chestplate , 1), new Object[]{"# #" , "###" , "###" ,'#' , RegistryItems.ardium_ingot});
@@ -53,39 +40,18 @@ public class RegistryRecipies
     GameRegistry.addRecipe(new ItemStack (RegistryArmors.ardium_boots , 1), new Object[]{"# #" , "# #" , "   " ,'#' , RegistryItems.ardium_ingot});
     GameRegistry.addRecipe(new ItemStack (RegistryArmors.ardium_boots , 1), new Object[]{"   " , "# #" , "# #" ,'#' , RegistryItems.ardium_ingot});
 		
-    GameRegistry.addRecipe(new ItemStack (RegistryArmors.oxium_helmet , 1), new Object[]{"###" , "# #" , "   " ,'#' ,RegistryItems.oxium_ingot});
-    GameRegistry.addRecipe(new ItemStack (RegistryArmors.oxium_helmet , 1), new Object[]{"   " , "###" , "# #" ,'#' , RegistryItems.oxium_ingot});
-    GameRegistry.addRecipe(new ItemStack (RegistryArmors.oxium_chestplate , 1), new Object[]{"# #" , "###" , "###" ,'#' , RegistryItems.oxium_ingot});
-    GameRegistry.addRecipe(new ItemStack (RegistryArmors.oxium_leggings , 1), new Object[]{"###" , "# #" , "# #" ,'#' , RegistryItems.oxium_ingot});
-    GameRegistry.addRecipe(new ItemStack (RegistryArmors.oxium_boots , 1), new Object[]{"# #" , "# #" , "   " ,'#' , RegistryItems.oxium_ingot});
-    GameRegistry.addRecipe(new ItemStack (RegistryArmors.oxium_boots , 1), new Object[]{"   " , "# #" , "# #" ,'#' , RegistryItems.oxium_ingot});
-	    
     GameRegistry.addRecipe(new ItemStack (RegistryItems.dynamite, 1), new Object[]{" # " , " 1 " ," 1 ",'#' ,Items.string ,'1', Blocks.tnt});
 	    
     GameRegistry.addRecipe(new ItemStack (RegistryItems.ardium_apple, 1), new Object[]{"###" , "#1#" ,"###",'#' ,RegistryItems.ardium_ingot ,'1', Items.apple});
-    GameRegistry.addRecipe(new ItemStack (RegistryItems.oxium_apple, 1), new Object[]{"###" , "#1#" ,"###",'#' ,RegistryItems.oxium_ingot ,'1', Items.apple});
 	    
     GameRegistry.addRecipe(new ItemStack(RegistryFluid.FakeWaterBucket, 1), new Object[] { "O", "X", Character.valueOf('X'), new ItemStack(Items.water_bucket), Character.valueOf('O'), new ItemStack(Items.spider_eye) });
 	    
     GameRegistry.addRecipe(new ItemStack(RegistryItems.backpack, 1), new Object[] { "XXX", "YZY", "YYY", Character.valueOf('X'), new ItemStack(RegistryItems.ardium_ingot), Character.valueOf('Z'), new ItemStack(Blocks.chest),  Character.valueOf('Y'), new ItemStack(Items.leather) });
 	    
-    GameRegistry.addRecipe(new ItemStack (RegistryTools.drill , 1), new Object[]{"#0#" , "#A#" , " P " ,'#' , Items.dye,'0' , RegistryItems.oxium_ingot,'A' , RegistryItems.ardium_ingot,'P' , RegistryTools.ardium_pickaxe});
-    GameRegistry.addRecipe(new ItemStack(RegistryTools.atomic_dissasembler, 1), new Object[] { "X", "L", Character.valueOf('X'), new ItemStack(RegistryTools.oxium_multitool), Character.valueOf('L'), new ItemStack(RegistryTools.drill) });
-		
-    GameRegistry.addRecipe(new ItemStack(RegistryItems.wand_explorer, 1), new Object[] { " X ", "YZY", " X ", Character.valueOf('X'), new ItemStack(RegistryBlocks.oxium_block), Character.valueOf('Y'), new ItemStack(RegistryItems.ardium_ingot), Character.valueOf('Z'), new ItemStack(Blocks.chest) });
-		
-    GameRegistry.addRecipe(new ItemStack (RegistryBlocks.jump_block , 1), new Object[]{"###" , "###" , "###" ,'#' , Items.slime_ball});
-		
-    GameRegistry.addRecipe(new ItemStack (RegistryBlocks.cave, 1), new Object []{"###" , "212" , "###", '#' ,Blocks.glass ,'1', RegistryItems.oxium_ingot,'2', RegistryItems.ardium_ingot});
-		
+    GameRegistry.addRecipe(new ItemStack(RegistryItems.wand_explorer, 1), new Object[] { " X ", "YZY", " X ", Character.valueOf('X'), new ItemStack(RegistryBlocks.ardium_block), Character.valueOf('Y'), new ItemStack(RegistryItems.ardium_ingot), Character.valueOf('Z'), new ItemStack(Blocks.chest) });
+	
     GameRegistry.addRecipe(new ItemStack(RegistryBlocks.ardium_furnace), new Object[] { "XXX", "X X", "XXX", Character.valueOf('X'), new ItemStack(RegistryItems.ardium_ingot) });  
-    GameRegistry.addRecipe(new ItemStack(RegistryBlocks.oxium_furnace), new Object[] { "XXX", "X X", "XXX",  Character.valueOf('X'), new ItemStack(RegistryItems.oxium_ingot) });  
-		
-    GameRegistry.addRecipe(new ItemStack(RegistryBlocks.spikeIron), new Object[] { " Y ", "YXY", "XXX", Character.valueOf('Y'), Items.wooden_sword, Character.valueOf('X'), Items.iron_ingot });
-    GameRegistry.addRecipe(new ItemStack(RegistryBlocks.spikeDiamond), new Object[] { " Y ", "YXY", "XXX", Character.valueOf('Y'), Items.golden_sword, Character.valueOf('X'), Items.diamond });   
-	GameRegistry.addRecipe(new ItemStack(RegistryBlocks.spikeGold), new Object[] { " Y ", "YXY", "XXX", Character.valueOf('Y'), Items.golden_sword, Character.valueOf('X'), Items.gold_ingot });
-	GameRegistry.addRecipe(new ItemStack(RegistryBlocks.spikeWood), new Object[] { " Y ", "YXY", "XXX", Character.valueOf('Y'), Items.wooden_sword, Character.valueOf('X'), Blocks.planks });
-	    
+    
 	GameRegistry.addRecipe(new ItemStack (RegistryBlocks.spruce_trapdoor , 9), new Object[]{"###" , "###" , "###" ,'#' ,  new ItemStack (Blocks.planks , 1 ,1)});
 	GameRegistry.addRecipe(new ItemStack (RegistryBlocks.birch_trapdoor , 9), new Object[]{"###" , "###" , "###" ,'#' ,  new ItemStack (Blocks.planks , 1 ,2)});
 	GameRegistry.addRecipe(new ItemStack (RegistryBlocks.jungle_trapdoor , 9), new Object[]{"###" , "###" , "###" ,'#' ,  new ItemStack (Blocks.planks , 1 ,3)});

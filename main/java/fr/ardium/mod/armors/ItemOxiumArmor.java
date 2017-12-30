@@ -44,19 +44,7 @@ public void onArmorTick(World world, EntityPlayer player, ItemStack stack)
 			player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 220, 1));
 		}
 	}
-public boolean getIsRepairable(ItemStack stack1, ItemStack stack2)
-{
-  return StackUntil.equalsWildcard(getRepairStack(), stack2) ? true : super.getIsRepairable(stack1, stack2);
-}
 
-		public  ItemStack getRepairStack()
-		{
-		  if ((getArmorMaterial() == RegistryArmors.Oxium)){
-		    return new ItemStack(RegistryItems.oxium_ingot, 1, 0);
-		  }
-
-		  return new ItemStack(getArmorMaterial().func_151685_b());
-			
-		}
+		
 
 	}

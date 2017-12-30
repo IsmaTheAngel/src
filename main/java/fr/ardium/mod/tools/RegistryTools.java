@@ -9,7 +9,7 @@ public class RegistryTools
 {
 	public static Item ardium_sword , ardium_pickaxe , ardium_shovel , ardium_axe ,ardium_multitool; 
 	public static Item oxium_sword , oxium_pickaxe , oxium_shovel , oxium_axe ,oxium_multitool; 
-	public static Item atomic_dissasembler , drill;
+
 	public static ToolMaterial Oxium = EnumHelper.addToolMaterial("Oxium",3, 2000, 20.0F, 5.0F, 25);
 	public static ToolMaterial Ardium = EnumHelper.addToolMaterial("Ardium",3, 1561, 8.0F, 3.0F, 10);
 	public static void init() 
@@ -43,10 +43,6 @@ public class RegistryTools
 		
         oxium_axe = new ToolAxe(Oxium).setCreativeTab(fr.ardium.mod.Ardium.ArdiumCreativeTab).setTextureName(fr.ardium.mod.Ardium.MODID + ":oxium_axe").setUnlocalizedName("oxium_axe");
 		GameRegistry.registerItem(oxium_axe,"oxium_axe");
-		
-		atomic_dissasembler = new ToolAtomicDissasembler(Oxium).setCreativeTab(fr.ardium.mod.Ardium.ArdiumCreativeTab).setUnlocalizedName("atomic_dissasembler");
-		GameRegistry.registerItem(atomic_dissasembler,"atomic_dissasembler");
-		drill = new ToolDrill(Oxium).setCreativeTab(fr.ardium.mod.Ardium.ArdiumCreativeTab).setUnlocalizedName("drill");
-		GameRegistry.registerItem(drill,"drill");
+
 	}
 }

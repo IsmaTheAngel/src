@@ -19,14 +19,11 @@ import net.minecraftforge.common.MinecraftForge;
 
 public class ClientProxy extends CommonProxy
 {
-	public static final RenderBlockSpike renderBlockSpike = new RenderBlockSpike();
 	public void registerRenders()
 	  {
 		RenderingRegistry.registerEntityRenderingHandler(EntityDynamite.class, new RenderDynamite());
 		ItemRenderingHandler handler = new ItemRenderingHandler();
 	    MinecraftForge.EVENT_BUS.register(new MekanismRenderer());
-	    MinecraftForgeClient.registerItemRenderer(RegistryTools.atomic_dissasembler, handler);
-	    RenderingRegistry.registerBlockHandler(renderBlockSpike);
 	    MinecraftForge.EVENT_BUS.register(new EventHandler());
 
 	  }

@@ -29,20 +29,15 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class RegistryBlocks 
 {
-	public static Block ardium_ore , oxium_ore , ardium_block , oxium_block , big_ardium_block,ardium_stairs,ardium_fences;
-	public static Block jump_block;
-	public static Block cave , RainbowLamp;
+	public static Block ardium_ore  , ardium_block , big_ardium_block,ardium_stairs,ardium_fences;
+	public static Block RainbowLamp;
 	public static Block ardium_furnace , oxium_furnace , ardium_extractor;
 	public static Block barrier , lantern , lanternPhys;
 	public static Block ardium_bush , xp_bush , oxium_bush;
-	public static BlockSpike spikeIron;
-	public static BlockSpike spikeWood;
-	public static BlockSpike spikeDiamond;
-	public static BlockSpike spikeGold;
 	public static Block spruce_trapdoor,acacia_trapdoor,birch_trapdoor,dark_oak_trapdoor,jungle_trapdoor;
 	public static Block block_spruce_door,block_acacia_door,block_birch_door,block_dark_oak_door,block_jungle_door;
 	public static Block fertilized_crop,diamond_crop,certus_crop,certuslvl2_crop,gold_crop,redstone_crop,emerald_crop,inferium_crop,intermidium_crop,superium_crops,supremium_crops,iron_crop,coal_crop,lapis_crop,air_crop,earth_crop,fire_crop,water_crop;
-	public static Block fertilizer , glassmod,clearglass;
+	public static Block fertilizer;
 	public static Block iron_box;
 	public static Block amorpha_crop;
 	public static Block coal_crops,cleome_crop;
@@ -51,23 +46,12 @@ public class RegistryBlocks
 	ardium_ore = new BlockBasic(Material.rock, 2).setBlockName("ardium_ore").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":ardium_ore").setHardness(5.0F);		
 	GameRegistry.registerBlock(ardium_ore, ardium_ore.getUnlocalizedName().substring(5));
 	
-	oxium_ore = new BlockBasic(Material.rock, 2).setBlockName("oxium_ore").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":oxium_ore").setHardness(5.0F);		
-	GameRegistry.registerBlock(oxium_ore, oxium_ore.getUnlocalizedName().substring(5));
 	
 	ardium_block = new BlockBasic(Material.rock, 2).setBlockName("ardium_block").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":ardium_block").setHardness(5.0F);		
 	GameRegistry.registerBlock(ardium_block, ardium_block.getUnlocalizedName().substring(5));
 	
-	oxium_block = new BlockBasic(Material.rock, 2).setBlockName("oxium_block").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":oxium_block").setHardness(5.0F);		
-	GameRegistry.registerBlock(oxium_block, oxium_block.getUnlocalizedName().substring(5));
-	
 	big_ardium_block = new BlockBasic(Material.rock, 2).setBlockName("big_ardium_block").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":big_ardium_block").setHardness(5.0F);		
 	GameRegistry.registerBlock(big_ardium_block, big_ardium_block.getUnlocalizedName().substring(5));
-	
-	jump_block = new BlockJump(Material.rock, 2).setBlockName("jump_block").setCreativeTab(Ardium.ArdiumCreativeTab).setHardness(5.0F);	
-	GameRegistry.registerBlock(jump_block, jump_block.getUnlocalizedName().substring(5));
-	
-	cave = new BlockInstable("uingot",false).setBlockName("cave").setCreativeTab(Ardium.ArdiumCreativeTab).setHardness(5.0F);		
-	GameRegistry.registerBlock(cave, cave.getUnlocalizedName().substring(5));
 	
 	ardium_furnace = new BlockArdiumFurnace(true, "ardium_furnace_off").setBlockName("ardium_furnace").setCreativeTab(Ardium.ArdiumCreativeTab);
 	GameRegistry.registerBlock(ardium_furnace, ardium_furnace.getUnlocalizedName().substring(5));
@@ -84,27 +68,6 @@ public class RegistryBlocks
 	ardium_extractor = new BlockExtractor().setBlockName("ardium_extractor");
 	GameRegistry.registerBlock(ardium_extractor, ardium_extractor.getUnlocalizedName().substring(5));
 	
-	ardium_bush = new BlockArdiumBush(RegistryItems.ardium_ingot);
-	GameRegistry.registerBlock(ardium_bush, ardium_bush.getUnlocalizedName().substring(5));
-	
-	oxium_bush = new BlockOxiumBush(RegistryItems.oxium_ingot);
-	GameRegistry.registerBlock(oxium_bush, oxium_bush.getUnlocalizedName().substring(5));
-	
-	xp_bush = new BlockXPBush(RegistryItems.xpberry);
-	GameRegistry.registerBlock(xp_bush, xp_bush.getUnlocalizedName().substring(5));
-	
-	spikeIron = new BlockSpike(Material.iron, "spikeiron", "iron_block", "iron_block", 5.0F);
-	GameRegistry.registerBlock(spikeIron, spikeIron.getUnlocalizedName().substring(5));
-
-    spikeWood = new BlockSpike(Material.iron, "spikewood", "planks_oak", "planks_oak", 4.0F);
-    GameRegistry.registerBlock(spikeWood, spikeWood.getUnlocalizedName().substring(5));
-    
-    spikeDiamond = new BlockSpike(Material.iron, "spikediamond", "diamond_block", "diamond_block", 7.0F);
-    GameRegistry.registerBlock(spikeDiamond, spikeDiamond.getUnlocalizedName().substring(5));
-    
-    spikeGold = new BlockSpike(Material.iron, "spikegold", "gold_block", "gold_block", 6.0F);
-    GameRegistry.registerBlock(spikeGold, spikeGold.getUnlocalizedName().substring(5));
-    
     spruce_trapdoor = new BlockTrapdoor(Material.wood).setBlockName("spruce_trapdoor").setCreativeTab(CreativeTabs.tabRedstone).setBlockTextureName(Ardium.MODID + ":spruce_trapdoor").setHardness(1.0F);		
 	GameRegistry.registerBlock(spruce_trapdoor, spruce_trapdoor.getUnlocalizedName().substring(5));
 	
@@ -195,13 +158,6 @@ public class RegistryBlocks
 	
 	fertilizer = new BlockFertilizer().setBlockName("fertilizer");
 	GameRegistry.registerBlock(fertilizer, fertilizer.getUnlocalizedName().substring(5));
-	
-	 glassmod = new BlockRenforcedGlass("stained", true, new String[] { "white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black" }).setBlockName("GlassBlock.StainedClear");
-     glassmod.stepSound = Block.soundTypeGlass;
-     GameRegistry.registerBlock(glassmod, glassmoditem.class, "GlassBlock.StainedClear");
-	
-     clearglass = new BlockClearGlass("clearglass", false).setBlockName("clearglass");
-     GameRegistry.registerBlock(clearglass, clearglass.getUnlocalizedName().substring(5));
      
      cleome_crop = new CleomeCrop().setBlockName("iron_crop").setBlockTextureName(Ardium.MODID +":cleome_crop");
      GameRegistry.registerBlock(cleome_crop, cleome_crop.getUnlocalizedName().substring(5));
