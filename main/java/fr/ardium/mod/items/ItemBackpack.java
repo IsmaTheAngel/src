@@ -13,8 +13,8 @@ public class ItemBackpack extends Item
 	public static final String NAME = "backpack";
 
 	public ItemBackpack() {
-		this.setUnlocalizedName(Ardium.MODID + "_" + NAME);
-		this.setTextureName(Ardium.MODID + ":" + NAME);
+		this.setUnlocalizedName(Ardium.MOD_ID + "_" + NAME);
+		this.setTextureName(Ardium.MOD_ID + ":" + NAME);
 		this.setCreativeTab(Ardium.ArdiumCreativeTab);
 		this.setTextureName("ardium:backpack");
 		this.maxStackSize = 1; // N'oubliez pas ceci, Á‡ empÍche l'item d'Ítre stackable

@@ -20,7 +20,6 @@ import fr.ardium.mod.blocks.crops.BlockCropRedstone;
 import fr.ardium.mod.blocks.crops.BlockCropSuperium;
 import fr.ardium.mod.blocks.crops.BlockCropSupremium;
 import fr.ardium.mod.blocks.crops.BlockCropWater;
-import fr.ardium.mod.items.RegistryItems;
 import fr.ardium.mod.newcrops.AmorphaCrop;
 import fr.ardium.mod.newcrops.CleomeCrop;
 import net.minecraft.block.Block;
@@ -43,20 +42,20 @@ public class RegistryBlocks
 	public static Block coal_crops,cleome_crop;
 	
 	public static void init() {
-	ardium_ore = new BlockBasic(Material.rock, 2).setBlockName("ardium_ore").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":ardium_ore").setHardness(5.0F);		
+	ardium_ore = new BlockBasic(Material.rock, 2).setBlockName("ardium_ore").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MOD_ID + ":ardium_ore").setHardness(5.0F);
 	GameRegistry.registerBlock(ardium_ore, ardium_ore.getUnlocalizedName().substring(5));
 	
 	
-	ardium_block = new BlockBasic(Material.rock, 2).setBlockName("ardium_block").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":ardium_block").setHardness(5.0F);		
+	ardium_block = new BlockBasic(Material.rock, 2).setBlockName("ardium_block").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MOD_ID + ":ardium_block").setHardness(5.0F);
 	GameRegistry.registerBlock(ardium_block, ardium_block.getUnlocalizedName().substring(5));
 	
-	big_ardium_block = new BlockBasic(Material.rock, 2).setBlockName("big_ardium_block").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":big_ardium_block").setHardness(5.0F);		
+	big_ardium_block = new BlockBasic(Material.rock, 2).setBlockName("big_ardium_block").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MOD_ID + ":big_ardium_block").setHardness(5.0F);
 	GameRegistry.registerBlock(big_ardium_block, big_ardium_block.getUnlocalizedName().substring(5));
 	
 	ardium_furnace = new BlockArdiumFurnace(true, "ardium_furnace_off").setBlockName("ardium_furnace").setCreativeTab(Ardium.ArdiumCreativeTab);
 	GameRegistry.registerBlock(ardium_furnace, ardium_furnace.getUnlocalizedName().substring(5));
 	
-	RainbowLamp = new BlockBasic(Material.rock, 2).setBlockName("RainbowLamp").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MODID + ":rainbow_lamp").setHardness(5.0F).setLightLevel(2.0F);		
+	RainbowLamp = new BlockBasic(Material.rock, 2).setBlockName("RainbowLamp").setCreativeTab(Ardium.ArdiumCreativeTab).setBlockTextureName(Ardium.MOD_ID + ":rainbow_lamp").setHardness(5.0F).setLightLevel(2.0F);
 	GameRegistry.registerBlock(RainbowLamp, RainbowLamp.getUnlocalizedName().substring(5));
 	
 	barrier = new BlockBarrier();
@@ -65,34 +64,34 @@ public class RegistryBlocks
 	ardium_extractor = new BlockExtractor().setBlockName("ardium_extractor");
 	GameRegistry.registerBlock(ardium_extractor, ardium_extractor.getUnlocalizedName().substring(5));
 	
-    spruce_trapdoor = new BlockTrapdoor(Material.wood).setBlockName("spruce_trapdoor").setCreativeTab(CreativeTabs.tabRedstone).setBlockTextureName(Ardium.MODID + ":spruce_trapdoor").setHardness(1.0F);		
+    spruce_trapdoor = new BlockTrapdoor(Material.wood).setBlockName("spruce_trapdoor").setCreativeTab(CreativeTabs.tabRedstone).setBlockTextureName(Ardium.MOD_ID + ":spruce_trapdoor").setHardness(1.0F);
 	GameRegistry.registerBlock(spruce_trapdoor, spruce_trapdoor.getUnlocalizedName().substring(5));
 	
-	acacia_trapdoor = new BlockTrapdoor(Material.wood).setBlockName("acacia_trapdoor").setCreativeTab(CreativeTabs.tabRedstone).setBlockTextureName(Ardium.MODID + ":acacia_trapdoor").setHardness(1.0F);		
+	acacia_trapdoor = new BlockTrapdoor(Material.wood).setBlockName("acacia_trapdoor").setCreativeTab(CreativeTabs.tabRedstone).setBlockTextureName(Ardium.MOD_ID + ":acacia_trapdoor").setHardness(1.0F);
 	GameRegistry.registerBlock(acacia_trapdoor, acacia_trapdoor.getUnlocalizedName().substring(5));
 	
-	birch_trapdoor = new BlockTrapdoor(Material.wood).setBlockName("birch_trapdoor").setCreativeTab(CreativeTabs.tabRedstone).setBlockTextureName(Ardium.MODID + ":birch_trapdoor").setHardness(1.0F);		
+	birch_trapdoor = new BlockTrapdoor(Material.wood).setBlockName("birch_trapdoor").setCreativeTab(CreativeTabs.tabRedstone).setBlockTextureName(Ardium.MOD_ID + ":birch_trapdoor").setHardness(1.0F);
 	GameRegistry.registerBlock(birch_trapdoor, birch_trapdoor.getUnlocalizedName().substring(5));
 	
-	dark_oak_trapdoor = new BlockTrapdoor(Material.wood).setBlockName("dark_oak_trapdoor").setCreativeTab(CreativeTabs.tabRedstone).setBlockTextureName(Ardium.MODID + ":dark_oak_trapdoor").setHardness(1.0F);		
+	dark_oak_trapdoor = new BlockTrapdoor(Material.wood).setBlockName("dark_oak_trapdoor").setCreativeTab(CreativeTabs.tabRedstone).setBlockTextureName(Ardium.MOD_ID + ":dark_oak_trapdoor").setHardness(1.0F);
 	GameRegistry.registerBlock(dark_oak_trapdoor, dark_oak_trapdoor.getUnlocalizedName().substring(5));
 	
-	jungle_trapdoor = new BlockTrapdoor(Material.wood).setBlockName("jungle_trapdoor").setCreativeTab(CreativeTabs.tabRedstone).setBlockTextureName(Ardium.MODID + ":jungle_trapdoor").setHardness(1.0F);		
+	jungle_trapdoor = new BlockTrapdoor(Material.wood).setBlockName("jungle_trapdoor").setCreativeTab(CreativeTabs.tabRedstone).setBlockTextureName(Ardium.MOD_ID + ":jungle_trapdoor").setHardness(1.0F);
 	GameRegistry.registerBlock(jungle_trapdoor, jungle_trapdoor.getUnlocalizedName().substring(5));
 	
-	block_spruce_door = new BlockSpruceDoor(Material.wood).setBlockName("block_spruce_door").setBlockTextureName(Ardium.MODID + ":spruce_door").setHardness(1.0F);		
+	block_spruce_door = new BlockSpruceDoor(Material.wood).setBlockName("block_spruce_door").setBlockTextureName(Ardium.MOD_ID + ":spruce_door").setHardness(1.0F);
 	GameRegistry.registerBlock(block_spruce_door, block_spruce_door.getUnlocalizedName().substring(5));
 	
-	block_acacia_door = new BlockAcaciaDoor(Material.wood).setBlockName("block_acacia_door").setBlockTextureName(Ardium.MODID + ":acacia_door").setHardness(1.0F);		
+	block_acacia_door = new BlockAcaciaDoor(Material.wood).setBlockName("block_acacia_door").setBlockTextureName(Ardium.MOD_ID + ":acacia_door").setHardness(1.0F);
 	GameRegistry.registerBlock(block_acacia_door,block_acacia_door.getUnlocalizedName().substring(5));
 	
-	block_birch_door = new BlockBirchDoor(Material.wood).setBlockName("block_birch_door").setBlockTextureName(Ardium.MODID + ":birch_door").setHardness(1.0F);		
+	block_birch_door = new BlockBirchDoor(Material.wood).setBlockName("block_birch_door").setBlockTextureName(Ardium.MOD_ID + ":birch_door").setHardness(1.0F);
 	GameRegistry.registerBlock(block_birch_door, block_birch_door.getUnlocalizedName().substring(5));
 	
-	block_dark_oak_door = new BlockDarkOakDoor(Material.wood).setBlockName("block_dark_oak_door").setBlockTextureName(Ardium.MODID + ":dark_oak_door").setHardness(1.0F);		
+	block_dark_oak_door = new BlockDarkOakDoor(Material.wood).setBlockName("block_dark_oak_door").setBlockTextureName(Ardium.MOD_ID + ":dark_oak_door").setHardness(1.0F);
 	GameRegistry.registerBlock(block_dark_oak_door, block_dark_oak_door.getUnlocalizedName().substring(5));
 	
-	block_jungle_door = new BlockJungleDoor(Material.wood).setBlockName("block_jungle_door").setBlockTextureName(Ardium.MODID + ":jungle_door").setHardness(1.0F);		
+	block_jungle_door = new BlockJungleDoor(Material.wood).setBlockName("block_jungle_door").setBlockTextureName(Ardium.MOD_ID + ":jungle_door").setHardness(1.0F);
 	GameRegistry.registerBlock(block_jungle_door, block_jungle_door.getUnlocalizedName().substring(5));
 	
     lantern = new BlockLantern().setBlockName("blockLantern");
@@ -101,7 +100,7 @@ public class RegistryBlocks
 	lanternPhys = new BlockLanternPhys("lanternPhys").setBlockName("blocklanternPhys").setBlockTextureName("ardium:lantern");
 	GameRegistry.registerBlock(lanternPhys, lanternPhys.getUnlocalizedName().substring(5));
 	
-	iron_box = new IronBox(Material.cactus).setBlockName("iron_box").setBlockTextureName(Ardium.MODID + ":iron_box").setCreativeTab(Ardium.ArdiumCreativeTab).setHardness(2.0F);
+	iron_box = new IronBox(Material.cactus).setBlockName("iron_box").setBlockTextureName(Ardium.MOD_ID + ":iron_box").setCreativeTab(Ardium.ArdiumCreativeTab).setHardness(2.0F);
 	GameRegistry.registerBlock(iron_box, iron_box.getUnlocalizedName().substring(5));
 	
     fertilized_crop = new BlockCropFertilized(0);
@@ -124,7 +123,7 @@ public class RegistryBlocks
     certuslvl2_crop = new BlockCropLvl2(0);
     
     
-    amorpha_crop = new AmorphaCrop().setBlockName("coal_crops").setBlockTextureName(Ardium.MODID+":amorpha_crop");
+    amorpha_crop = new AmorphaCrop().setBlockName("coal_crops").setBlockTextureName(Ardium.MOD_ID +":amorpha_crop");
     GameRegistry.registerBlock(amorpha_crop, amorpha_crop.getUnlocalizedName().substring(5));
     
     
@@ -156,7 +155,7 @@ public class RegistryBlocks
 	fertilizer = new BlockFertilizer().setBlockName("fertilizer");
 	GameRegistry.registerBlock(fertilizer, fertilizer.getUnlocalizedName().substring(5));
      
-     cleome_crop = new CleomeCrop().setBlockName("iron_crop").setBlockTextureName(Ardium.MODID +":cleome_crop");
+     cleome_crop = new CleomeCrop().setBlockName("iron_crop").setBlockTextureName(Ardium.MOD_ID +":cleome_crop");
      GameRegistry.registerBlock(cleome_crop, cleome_crop.getUnlocalizedName().substring(5));
 	}
  

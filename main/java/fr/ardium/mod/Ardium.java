@@ -14,37 +14,34 @@ import fr.ardium.mod.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-@Mod(modid = "ardium" , name = "Ardium" , version = "Special Edition")
+@Mod(modid = "ardium", name = "Ardium", version = "Special Edition")
 
-public class Ardium 
-{
-	@Instance("ardium")
-	public static Ardium instance;
-	@SidedProxy (clientSide = "fr.ardium.mod.proxy.ClientProxy" , serverSide = "fr.ardium.mod.proxy.CommonProxy")
-	public static CommonProxy proxy;
-	public static String MODID = "ardium";
-	public static CreativeTabs ArdiumCreativeTab = new CreativeTabs("Ardium")
-    {
+public class Ardium {
+    @Instance("ardium")
+    public static Ardium instance;
+    @SidedProxy(clientSide = "fr.ardium.mod.proxy.ClientProxy", serverSide = "fr.ardium.mod.proxy.CommonProxy")
+    public static CommonProxy proxy;
+    public static final String MOD_ID = "ardium";
+    public static CreativeTabs ArdiumCreativeTab = new CreativeTabs ("Ardium") {
         @SideOnly(Side.CLIENT)
-        public Item getTabIconItem()
-        {
-            return Item.getItemFromBlock(RegistryBlocks.ardium_block);
+        public Item getTabIconItem() {
+            return Item.getItemFromBlock (RegistryBlocks.ardium_block);
         }
     };
-	@EventHandler
-	public void preInit(FMLPreInitializationEvent event)
-	{
-		CommonProxy.preInit(event);
-		proxy.registerRenders();
-	}
-	@EventHandler
-	public void Init(FMLInitializationEvent event)
-	{
-		CommonProxy.Init(event);
-	}
-	@EventHandler
-	public void postInit(FMLPostInitializationEvent event)
-	{
-		CommonProxy.postInit(event);
-	}
+
+    @EventHandler
+    public void preInit(FMLPreInitializationEvent event) {
+        CommonProxy.preInit (event);
+        proxy.registerRenders ();
+    }
+
+    @EventHandler
+    public void Init(FMLInitializationEvent event) {
+        CommonProxy.Init (event);
+    }
+
+    @EventHandler
+    public void postInit(FMLPostInitializationEvent event) {
+        CommonProxy.postInit (event);
+    }
 }

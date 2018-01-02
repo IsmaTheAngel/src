@@ -33,9 +33,9 @@ public class BlockJump extends Block
 	
 	 public void registerBlockIcons(IIconRegister iiconRegister)
 	    {
-	    	this.blockIcon = iiconRegister.registerIcon(Ardium.MODID + ":slimeblock_green");
-	    	this.top = iiconRegister.registerIcon(Ardium.MODID + ":jump_block");
-	    	this.bottom = iiconRegister.registerIcon(Ardium.MODID + ":slimeblock_green");
+	    	this.blockIcon = iiconRegister.registerIcon(Ardium.MOD_ID + ":slimeblock_green");
+	    	this.top = iiconRegister.registerIcon(Ardium.MOD_ID + ":jump_block");
+	    	this.bottom = iiconRegister.registerIcon(Ardium.MOD_ID + ":slimeblock_green");
 	    	
 	    	 
 	    }
