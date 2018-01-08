@@ -14,17 +14,14 @@ import fr.ardium.mod.proxy.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-@Mod(modid = "ardium", name = "Ardium", version = "${version}", acceptedMinecraftVersions = "[${mcversion}]",
-        dependencies = "required-after:Forge@[10.13.4.1558);" + "after:baubles" + "after:CodeChickenCore;" +
-                "after:NotEnoughItems;" +
-                "after:Waila;")
+@Mod(modid = "ardium", name = "Ardium", version = "Special Edition")
 
 public class Ardium {
-    public static final String MOD_ID = "ardium";
     @Instance("ardium")
     public static Ardium instance;
     @SidedProxy(clientSide = "fr.ardium.mod.proxy.ClientProxy", serverSide = "fr.ardium.mod.proxy.CommonProxy")
     public static CommonProxy proxy;
+    public static final String MOD_ID = "ardium";
     public static CreativeTabs ArdiumCreativeTab = new CreativeTabs ("Ardium") {
         @SideOnly(Side.CLIENT)
         public Item getTabIconItem() {
